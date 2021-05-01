@@ -427,6 +427,11 @@ a.project:hover {
   font-weight: 600;
 }
 
+.project .type-image {
+  width: 83px;
+  height: 77px;
+}
+
 ul.languages {
   font-size: 12px;
 
