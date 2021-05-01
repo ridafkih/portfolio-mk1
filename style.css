@@ -210,12 +210,6 @@ nav > a.header-link:hover {
   transform: scale(1.2) translateZ(-1px);
 }
 
-section#hero {
-  height: calc(80vh - 140px);
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-}
-
 section {
   width: 100%;
   display: flex;
@@ -223,6 +217,43 @@ section {
 
   box-sizing: border-box;
   padding: 128px;
+}
+
+section#hero {
+  height: calc(80vh - 140px);
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+section#myProjects {
+  transform-style: preserve-3d;
+  z-index: 2;
+  background: linear-gradient(#0e101c00, #0e101c 12%, #0e101c 95%, #0e101c00);
+}
+
+#track {
+  position: fixed;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 15% 15% 5% 65%;
+
+  box-sizing: border-box;
+  padding: 0 128px;
+
+  z-index: 0;
+  transform: translateZ(-1px);
+}
+
+#track::after {
+  content: "";
+  grid-column-start: 3;
+  grid-column-end: span 2;
+
+  margin-left: 18px;
+
+  width: 1px;
+  background: linear-gradient(rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 85%);
 }
 
 .section-grid {
@@ -419,6 +450,10 @@ ul.languages > li {
 
   .section-title:not(.flipped) {
     text-align: left;
+  }
+
+  #track {
+    display: none;
   }
 
 }
