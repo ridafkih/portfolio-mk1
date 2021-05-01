@@ -83,6 +83,10 @@ header {
   max-width: 1280px;
 }
 
+#sideLines {
+  z-index: 1;
+}
+
 #sideLines > * {
   position: fixed;
 
@@ -624,5 +628,18 @@ ul.languages > li {
     position: relative;
     bottom: initial;
     right: initial;
+  }
+}
+
+@media (max-height: 460px) {
+  ul#socialLinks,
+  #emailContainer {
+    transform: translateY(40px);
+  }
+}
+
+@media (max-height: 325px) {
+  #sideLines {
+    display: none;
   }
 }
