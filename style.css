@@ -210,13 +210,13 @@ nav > a.header-link:hover {
   transform: scale(1.2) translateZ(-1px);
 }
 
-#hero.section-container {
+section#hero {
   height: calc(80vh - 140px);
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-.section-container {
+section {
   width: 100%;
   display: flex;
   align-items: center;
@@ -225,11 +225,8 @@ nav > a.header-link:hover {
   padding: 128px;
 }
 
-.section {
+.section-grid {
   width: 100%;
-}
-
-.section.grid {
   display: grid;
   grid-template-columns: 15% 15% 5% 65%;
 }
@@ -415,7 +412,7 @@ ul.languages > li {
     font-size: 32px;
   }
 
-  .section.grid {
+  .section-grid {
     display: flex;
     flex-direction: column;
   }
@@ -431,7 +428,7 @@ ul.languages > li {
 }
 
 @media (max-width: 640px) {
-  .section-container {
+  section {
     padding: 32px;
   }
 
@@ -439,7 +436,7 @@ ul.languages > li {
     display: none;
   }
 
-  #hero.section-container {
+  section#hero {
     height: 80vh;
   }
 
