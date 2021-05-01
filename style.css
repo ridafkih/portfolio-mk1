@@ -18,7 +18,7 @@
       format("woff"),
     url("https://use.typekit.net/af/09d302/00000000000000007735a14e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
       format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   font-swap: swap;
@@ -32,7 +32,7 @@
       format("woff"),
     url("https://use.typekit.net/af/61b4ba/00000000000000007735a167/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
       format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 600;
   font-swap: swap;
@@ -46,7 +46,7 @@
       format("woff"),
     url("https://use.typekit.net/af/4abf65/00000000000000007735a15d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
       format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   font-swap: swap;
