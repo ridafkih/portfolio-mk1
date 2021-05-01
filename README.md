@@ -5,4 +5,4 @@ This is my personal portfolio, designed in Figma and written without frameworks 
 
 The original Figma design is as follows. 
 
-[Portfolio Figma Screenshot](https://i.imgur.com/JE9QzKS.png)
+[!Portfolio Figma Screenshot](https://i.imgur.com/JE9QzKS.png)
