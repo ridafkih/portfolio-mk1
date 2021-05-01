@@ -8,9 +8,9 @@ function init() {
   history.pushState("", document.title, window.location.pathname + window.location.search);
 
   const hamburgerButtons = document.querySelectorAll("#hamburgerButton, #exitButton");
-  const headerLinks = document.querySelectorAll("#header a");
+  const headerLinks = document.querySelectorAll("header a");
 
-  const header = document.querySelector('#header');
+  const header = document.querySelector('header');
 
   headerLinks.forEach(link => {
     link.addEventListener("click", () => {
