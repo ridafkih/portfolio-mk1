@@ -408,10 +408,6 @@ ul.languages > li {
     grid-template-columns: 100%;
   }
 
-  h1 {
-    font-size: 32px;
-  }
-
   .section-grid {
     display: flex;
     flex-direction: column;
@@ -508,6 +504,12 @@ ul.languages > li {
   .project-metadata {
     align-items: flex-start;
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 64px;
   }
 }
 
