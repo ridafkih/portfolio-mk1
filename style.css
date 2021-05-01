@@ -24,7 +24,8 @@ body {
   box-sizing: border-box;
 }
 
-body > *:not(.unlimited-width) {
+main > *:not(.unlimited-width),
+header {
   max-width: 1280px;
 }
 
@@ -87,7 +88,7 @@ ul#socialLinks .spacer {
   transform: rotate(90deg);
   font-family: 'Roboto', monospace;
   letter-spacing: 0.05em;
-  opacity: .5;
+  opacity: 0.75;
   transition: opacity 0.16s ease;
 }
 
@@ -111,7 +112,7 @@ button#exitButton {
   border: none;
 }
 
-#header {
+header {
   height: 140px;
   width: 100%;
   display: flex;
@@ -122,15 +123,15 @@ button#exitButton {
   padding: 0 32px;
 }
 
-#header > #exitButton {
+header > #exitButton {
   display: none;
 }
 
-#header > #logoContainer {
+header > #logoContainer {
   margin-right: 64px;
 }
 
-#header .logo {
+header .logo {
   width: 24px;
 }
 
@@ -204,7 +205,8 @@ nav > a.header-link:hover {
   cursor: pointer;
 }
 
-.highlighted:hover::before {
+.highlighted:hover::before,
+.highlighted:focus::before {
   transform: scale(1.2) translateZ(-1px);
 }
 
@@ -244,25 +246,22 @@ nav > a.header-link:hover {
 }
 
 .discrete {
-  opacity: .35;
+  opacity: .50;
 }
 
-h6, h4, h2, h1 {
-  margin: 0;
-}
-
-h6 {
+.subtitle {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Roboto Mono", monospace;
   color: #2C96F3;
 }
 
-h2 {
+.exposition {
   font-size: 18px;
+  font-weight: 600;
 }
 
-h1 {
+.hero-title {
   font-weight: 600;
   font-size: 74px;
   line-height: 0.95em;
@@ -444,7 +443,7 @@ ul.languages > li {
     height: 80vh;
   }
 
-  #header {
+  header {
     position: fixed;
 
     flex-direction: column;
@@ -462,7 +461,7 @@ ul.languages > li {
     z-index: 2;
   }
 
-  #header > #exitButton {
+  header > #exitButton {
     display: block;
     position: absolute;
     top: 32px;
@@ -470,19 +469,19 @@ ul.languages > li {
     margin: 0;
   }
 
-  #header:not(.open) {
+  header:not(.open) {
     visibility: hidden;
   }
 
-  #header.open {
+  header.open {
     transform: translateX(0);
   }
 
-  #header > * {
+  header > * {
     margin: 32px 0;
   }
 
-  #header > #logoContainer {
+  header > #logoContainer {
     margin: 0;
   }
 
