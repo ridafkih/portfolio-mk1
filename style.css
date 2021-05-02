@@ -510,7 +510,7 @@ ul.languages > li {
     flex-direction: column;
   }
 
-  #hero .animoji {
+  #hero .animoji-container {
     display: none;
   }
 
