@@ -32,14 +32,14 @@
 </head>
 <body>
   <div id="mobileHeader">
-    <img src="./src/header-logo.svg" class="mobile-logo" alt="R'f logo">
+    <img src="./src/svg/header-logo.svg" class="mobile-logo" alt="R'f logo">
     <button id="hamburgerButton">
-      <img src="./src/header-hamburger.svg" alt="Hamburger Menu Icon" srcset="">
+      <img src="./src/svg/header-hamburger.svg" alt="Hamburger Menu Icon" >
     </button>
   </div>
   <header>
     <div id="logoContainer">
-      <img src="./src/header-logo.svg" class="logo" alt="R'h logo" srcset="">
+      <img src="./src/svg/header-logo.svg" class="logo" alt="R'h logo" >
     </div>
     <nav>
       <a class="header-link" href="#aboutMe">About Me</a>
@@ -48,26 +48,38 @@
     </nav>
     <a href="https://github.com/ridarf/" class="highlighted">GitHub</a>
     <button id="exitButton">
-      <img src="./src/header-exit.svg" alt="header exit symbol" srcset="">
+      <img src="./src/svg/header-exit.svg" alt="header exit symbol" >
     </button>
   </header>
   <div id="sideLines">
     <ul id="socialLinks">
       <li>
         <a href="https://github.com/ridarf/" target="noopener">
-          <img src="./src/social-github.png" alt="GitHub Logo">
+          <picture aria-label="GitHub Logo">
+            <source srcset="./src/webp/social-github.webp" type="image/webp">
+            <source srcset="./src/png/social-github.png" type="image/png">
+            <img src="./src/png/social-github.png" alt="GitHub Logo">
+          </picture>
         </a>
       </li>
       <li class="spacer discrete"></li>
       <li>
         <a href="https://twitter.com/ridafkih/" target="noopener">
-          <img src="./src/social-twitter.png" alt="Twitter Logo">
+          <picture aria-label="Twitter Logo">
+            <source srcset="./src/webp/social-twitter.webp" type="image/webp">
+            <source srcset="./src/png/social-twitter.png" type="image/png">
+            <img src="./src/png/social-twitter.png" alt="Twitter Logo">
+          </picture>
         </a>
       </li>
       <li class="spacer discrete"></li>
       <li>
         <a href="https://instagram.com/rida.rf/" target="noopener"">
-          <img src="./src/social-instagram.png" alt="Instagram Logo">
+          <picture aria-label="Instagram Logo">
+            <source srcset="./src/webp/social-instagram.webp" type="image/webp">
+            <source srcset="./src/png/social-instagram.png" type="image/png">
+            <img src="./src/png/social-instagram.png" alt="Instagram Logo">
+          </picture>
         </a>
       </li>
     </ul>
@@ -79,7 +91,11 @@
     <div id="track"></div>
     <section id="hero">
       <div class="section-grid">
-        <img src="./src/hero-animoji.png" alt="Winking Apple Animoji" class="animoji">
+        <picture class="animoji-container" aria-label="Apple Animoji winking">
+          <source srcset="./src/webp/hero-animoji.webp" type="image/webp">
+          <source srcset="./src/png/hero-animoji.png" type="image/png">
+          <img class="animoji" src="./src/png/hero-animoji.png" alt="Apple Animoji winking">
+        </picture>
         <div id="heroContent">
           <div class="subtitle">Howdy, I am</div>
           <div class="hero-title">Rida F'kih,</div>
@@ -101,12 +117,36 @@
           <p class="discrete">These are just some of the technologies & apps I use to build my programs.</p>
           <br>
           <div id="techStack">
-            <img src="./src/technology-node.png" alt="NodeJS Logo" class="technology">
-            <img src="./src/technology-html.png" alt="HTML Logo" class="technology">
-            <img src="./src/technology-css.png" alt="CSS Logo" class="technology">
-            <img src="./src/technology-js.png" alt="JavaScript Logo" class="technology">
-            <img src="./src/technology-react.png" alt="React Logo" class="technology">
-            <img src="./src/technology-figma.png" alt="Figma Logo" class="technology">
+            <picture aria-label="NodeJS Logo">
+              <source srcset="./src/webp/technology-node.webp" type="image/webp">
+              <source srcset="./src/png/technology-node.png" type="image/png">
+              <img src="./src/png/technology-node.png" alt="NodeJS Logo">
+            </picture>
+            <picture aria-label="HTML Logo">
+              <source srcset="./src/webp/technology-html.webp" type="image/webp">
+              <source srcset="./src/png/technology-html.png" type="image/png">
+              <img src="./src/png/technology-html.png" alt="HTML Logo">
+            </picture>
+            <picture aria-label="CSS Logo">
+              <source srcset="./src/webp/technology-css.webp" type="image/webp">
+              <source srcset="./src/png/technology-css.png" type="image/png">
+              <img src="./src/png/technology-css.png" alt="CSS Logo">
+            </picture>
+            <picture aria-label="JavaScript Logo">
+              <source srcset="./src/webp/technology-js.webp" type="image/webp">
+              <source srcset="./src/png/technology-js.png" type="image/png">
+              <img src="./src/png/technology-js.png" alt="JavaScript Logo">
+            </picture>
+            <picture aria-label="React Logo">
+              <source srcset="./src/webp/technology-react.webp" type="image/webp">
+              <source srcset="./src/png/technology-react.png" type="image/png">
+              <img src="./src/png/technology-react.png" alt="React Logo">
+            </picture>
+            <picture aria-label="Figma Logo">
+              <source srcset="./src/webp/technology-figma.webp" type="image/webp">
+              <source srcset="./src/png/technology-figma.png" type="image/png">
+              <img src="./src/png/technology-figma.png" alt="Figma Logo">
+            </picture>
           </div>
         </div>
       </div>
@@ -130,7 +170,7 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-web.png" alt="Internet emoji" srcset="">
+                <img class="type-image" width="83" height="77" src="./src/webp/project-web.webp" alt="Internet emoji" >
               </div>
             </div>
             <p class="project-description">
@@ -153,7 +193,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-tool.png" alt="Tools  class="type-image" width="83" height="77"srcset="">
+                <picture aria-label="Tools Emoji">
+                  <source srcset="./src/webp/project-tool.webp" type="image/webp">
+                  <source srcset="./src/png/project-tool.png" type="image/png">
+                  <img src="./src/png/project-tool.png" width="83" height="77" alt="Tools Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">
@@ -170,7 +214,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-tool.png" alt="Tools emoji" srcset="">
+                <picture aria-label="Tools Emoji">
+                  <source srcset="./src/webp/project-tool.webp" type="image/webp">
+                  <source srcset="./src/png/project-tool.png" type="image/png">
+                  <img src="./src/png/project-tool.png" width="83" height="77" alt="Tools Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">
@@ -187,7 +235,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-tool.png" alt="Tools emoji" srcset="">
+                <picture aria-label="Tools Emoji">
+                  <source srcset="./src/webp/project-tool.webp" type="image/webp">
+                  <source srcset="./src/png/project-tool.png" type="image/png">
+                  <img src="./src/png/project-tool.png" width="83" height="77" alt="Tools Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">
@@ -205,7 +257,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img src="./src/project-game.png" width="83" height="77" alt="Game controller emoji" srcset="">
+                <picture aria-label="Game Controller Emoji">
+                  <source srcset="./src/webp/project-game.webp" type="image/webp">
+                  <source srcset="./src/png/project-game.png" type="image/png">
+                  <img src="./src/png/project-game.png" width="83" height="77" alt="Game Controller Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">
@@ -226,7 +282,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-web.png" alt="Internet emoji" srcset="">
+                <picture aria-label="Internet Emoji">
+                  <source srcset="./src/webp/project-web.webp" type="image/webp">
+                  <source srcset="./src/png/project-web.png" type="image/png">
+                  <img src="./src/png/project-web.png" width="83" height="77" alt="Internet Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">
@@ -243,7 +303,12 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-package.png" alt="Package emoji" srcset="">
+                <picture aria-label="Internet Emoji">
+                  <source srcset="./src/webp/project-package.webp" type="image/webp">
+                  <source srcset="./src/png/project-package.png" type="image/png">
+                  <img src="./src/png/project-package.png" width="83" height="77" alt="Package Emoji">
+                </picture>
+
               </div>
             </div>
             <p class="project-description">
@@ -262,7 +327,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-web.png" alt="Internet emoji" srcset="">
+                <picture aria-label="Internet Emoji">
+                  <source srcset="./src/webp/project-web.webp" type="image/webp">
+                  <source srcset="./src/png/project-web.png" type="image/png">
+                  <img src="./src/png/project-web.png" width="83" height="77" alt="Internet Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">
@@ -281,7 +350,11 @@
                 </ul>
               </div>
               <div class="column">
-                <img class="type-image" width="83" height="77" src="./src/project-game.png" alt="Game controller emoji" srcset="">
+                <picture aria-label="Game Controller Emoji">
+                  <source srcset="./src/webp/project-game.webp" type="image/webp">
+                  <source srcset="./src/png/project-game.png" type="image/png">
+                  <img src="./src/png/project-game.png" width="83" height="77" alt="Game Controller Emoji">
+                </picture>
               </div>
             </div>
             <p class="project-description">

@@ -324,11 +324,15 @@ section#myProjects {
   grid-template-columns: 15% 15% 5% 65%;
 }
 
-.animoji {
-  width: 100%;
+.animoji-container {
   grid-column-start: 1;
   grid-column-end: span 2;
   justify-self: start;
+}
+
+.animoji,
+.animoji-container {
+  width: 100%;
 }
 
 #heroContent {
