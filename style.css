@@ -270,7 +270,6 @@ nav > a.header-link:hover {
 
 section {
   width: 100%;
-  max-height: 1280px;
   display: flex;
   align-items: center;
 
@@ -280,6 +279,7 @@ section {
 
 section#hero {
   height: calc(80vh - 140px);
+  max-height: 1280px;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
